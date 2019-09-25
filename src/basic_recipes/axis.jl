@@ -191,7 +191,7 @@ function default_ticks(lmin::Number, lmax::Number, n::Integer, scale_func = iden
         k_ideal = ticks,
         # `strict_span = false` rewards cases where the span of the
         # chosen  ticks is not too much bigger than amin - amax:
-        strict_span = false,
+        strict_span = true,
     )
     scaled_ticks
 end
